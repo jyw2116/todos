@@ -1,3 +1,6 @@
 FactoryGirl.define do
-  factory :todo
+  factory :todo do
+  	# owner_email 'person@example.com'
+  	sequence(:owner_email) {|n| "person#{n}@example.com"}
+  end
 end
